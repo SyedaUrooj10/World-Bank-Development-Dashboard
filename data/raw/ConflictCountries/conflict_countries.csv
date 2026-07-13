@@ -1,0 +1,719 @@
+year,country_name
+2025,Afghanistan
+2025,Burkina Faso
+2025,Burundi
+2025,Cameroon
+2025,Central African Republic
+2025,Chad
+2025,Comoros
+2025,Democratic Republic of Congo
+2025,Republic of Congo
+2025,Eritrea
+2025,Ethiopia
+2025,Guinea-Bissau
+2025,Haiti
+2025,Iraq
+2025,Kiribati
+2025,Kosovo
+2025,Lebanon
+2025,Libya
+2025,Mali
+2025,Marshall Islands
+2025,Micronesia
+2025,Mozambique
+2025,Myanmar
+2025,Niger
+2025,Nigeria
+2025,Papua New Guinea
+2025,São Tomé and Príncipe
+2025,Solomon Islands
+2025,Somalia
+2025,South Sudan
+2025,Sudan
+2025,Syrian Arab Republic
+2025,Timor-Leste
+2025,Tuvalu
+2025,Ukraine
+2025,Venezuela
+2025,West Bank and Gaza
+2025,Yemen
+2025,Zimbabwe
+2024,Afghanistan
+2024,Burkina Faso
+2024,Burundi
+2024,Cameroon
+2024,Central African Republic
+2024,Chad
+2024,Comoros
+2024,Democratic Republic of Congo
+2024,Republic of Congo
+2024,Eritrea
+2024,Ethiopia
+2024,Guinea-Bissau
+2024,Haiti
+2024,Iraq
+2024,Kiribati
+2024,Kosovo
+2024,Lebanon
+2024,Libya
+2024,Mali
+2024,Marshall Islands
+2024,Micronesia
+2024,Mozambique
+2024,Myanmar
+2024,Niger
+2024,Nigeria
+2024,Papua New Guinea
+2024,São Tomé and Príncipe
+2024,Solomon Islands
+2024,Somalia
+2024,South Sudan
+2024,Sudan
+2024,Syrian Arab Republic
+2024,Timor-Leste
+2024,Tuvalu
+2024,Ukraine
+2024,Venezuela
+2024,West Bank and Gaza
+2024,Yemen
+2024,Zimbabwe
+2023,Afghanistan
+2023,Burkina Faso
+2023,Burundi
+2023,Cameroon
+2023,Central African Republic
+2023,Chad
+2023,Comoros
+2023,Democratic Republic of Congo
+2023,Republic of Congo
+2023,Eritrea
+2023,Ethiopia
+2023,Guinea-Bissau
+2023,Haiti
+2023,Iraq
+2023,Kosovo
+2023,Lebanon
+2023,Libya
+2023,Mali
+2023,Marshall Islands
+2023,Micronesia
+2023,Mozambique
+2023,Myanmar
+2023,Niger
+2023,Nigeria
+2023,Papua New Guinea
+2023,Solomon Islands
+2023,Somalia
+2023,South Sudan
+2023,Sudan
+2023,Syrian Arab Republic
+2023,Timor-Leste
+2023,Tuvalu
+2023,Ukraine
+2023,Venezuela
+2023,West Bank and Gaza
+2023,Yemen
+2023,Zimbabwe
+2022,Afghanistan
+2022,Armenia
+2022,Azerbaijan
+2022,Burkina Faso
+2022,Burundi
+2022,Cameroon
+2022,Central African Republic
+2022,Chad
+2022,Comoros
+2022,Democratic Republic of Congo
+2022,Republic of Congo
+2022,Eritrea
+2022,Ethiopia
+2022,Guinea-Bissau
+2022,Haiti
+2022,Iraq
+2022,Kiribati
+2022,Kosovo
+2022,Lebanon
+2022,Libya
+2022,Mali
+2022,Marshall Islands
+2022,Micronesia
+2022,Mozambique
+2022,Myanmar
+2022,Niger
+2022,Nigeria
+2022,Papua New Guinea
+2022,Solomon Islands
+2022,Somalia
+2022,South Sudan
+2022,Sudan
+2022,Syrian Arab Republic
+2022,Timor-Leste
+2022,Tuvalu
+2022,Venezuela
+2022,West Bank and Gaza
+2022,Yemen
+2022,Zimbabwe
+2021,Afghanistan
+2021,Burkina Faso
+2021,Burundi
+2021,Cameroon
+2021,Central African Republic
+2021,Chad
+2021,Comoros
+2021,Democratic Republic of Congo
+2021,Republic of Congo
+2021,Eritrea
+2021,Gambia
+2021,Guinea-Bissau
+2021,Haiti
+2021,Iraq
+2021,Kiribati
+2021,Kosovo
+2021,Lao PDR
+2021,Lebanon
+2021,Liberia
+2021,Libya
+2021,Mali
+2021,Marshall Islands
+2021,Micronesia
+2021,Mozambique
+2021,Myanmar
+2021,Niger
+2021,Nigeria
+2021,Papua New Guinea
+2021,Solomon Islands
+2021,Somalia
+2021,South Sudan
+2021,Sudan
+2021,Syrian Arab Republic
+2021,Timor-Leste
+2021,Tuvalu
+2021,Venezuela
+2021,West Bank and Gaza
+2021,Yemen
+2021,Zimbabwe
+2020,Afghanistan
+2020,Burkina Faso
+2020,Burundi
+2020,Cameroon
+2020,Central African Republic
+2020,Chad
+2020,Comoros
+2020,Democratic Republic of Congo
+2020,Republic of Congo
+2020,Eritrea
+2020,Gambia
+2020,Guinea-Bissau
+2020,Haiti
+2020,Iraq
+2020,Kiribati
+2020,Kosovo
+2020,Lebanon
+2020,Liberia
+2020,Libya
+2020,Mali
+2020,Marshall Islands
+2020,Micronesia
+2020,Myanmar
+2020,Niger
+2020,Nigeria
+2020,Papua New Guinea
+2020,Solomon Islands
+2020,Somalia
+2020,South Sudan
+2020,Sudan
+2020,Syrian Arab Republic
+2020,Timor-Leste
+2020,Tuvalu
+2020,Venezuela
+2020,West Bank and Gaza
+2020,Yemen
+2020,Zimbabwe
+2019,Afghanistan
+2019,Burundi
+2019,Central African Republic
+2019,Chad
+2019,Comoros
+2019,Democratic Republic of Congo
+2019,Republic of Congo
+2019,Côte d'Ivoire
+2019,Djibouti
+2019,Eritrea
+2019,Gambia
+2019,Guinea-Bissau
+2019,Haiti
+2019,Iraq
+2019,Kiribati
+2019,Kosovo
+2019,Lebanon
+2019,Liberia
+2019,Libya
+2019,Mali
+2019,Marshall Islands
+2019,Micronesia
+2019,Mozambique
+2019,Myanmar
+2019,Papua New Guinea
+2019,Solomon Islands
+2019,Somalia
+2019,South Sudan
+2019,Sudan
+2019,Syrian Arab Republic
+2019,Timor-Leste
+2019,Togo
+2019,Tuvalu
+2019,West Bank and Gaza
+2019,Yemen
+2019,Zimbabwe
+2018,Afghanistan
+2018,Burundi
+2018,Central African Republic
+2018,Chad
+2018,Comoros
+2018,Democratic Republic of Congo
+2018,Republic of Congo
+2018,Côte d'Ivoire
+2018,Djibouti
+2018,Eritrea
+2018,Gambia
+2018,Guinea-Bissau
+2018,Haiti
+2018,Iraq
+2018,Kiribati
+2018,Kosovo
+2018,Lebanon
+2018,Liberia
+2018,Libya
+2018,Mali
+2018,Marshall Islands
+2018,Micronesia
+2018,Mozambique
+2018,Myanmar
+2018,Papua New Guinea
+2018,Sierra Leone
+2018,Solomon Islands
+2018,Somalia
+2018,South Sudan
+2018,Sudan
+2018,Syrian Arab Republic
+2018,Togo
+2018,Tuvalu
+2018,West Bank and Gaza
+2018,Yemen
+2018,Zimbabwe
+2017,Afghanistan
+2017,Burundi
+2017,Central African Republic
+2017,Chad
+2017,Comoros
+2017,Democratic Republic of Congo
+2017,Côte d'Ivoire
+2017,Djibouti
+2017,Eritrea
+2017,Gambia
+2017,Guinea-Bissau
+2017,Haiti
+2017,Iraq
+2017,Kiribati
+2017,Kosovo
+2017,Lebanon
+2017,Liberia
+2017,Libya
+2017,Madagascar
+2017,Mali
+2017,Marshall Islands
+2017,Micronesia
+2017,Myanmar
+2017,Papua New Guinea
+2017,Sierra Leone
+2017,Solomon Islands
+2017,Somalia
+2017,South Sudan
+2017,Sudan
+2017,Syrian Arab Republic
+2017,Togo
+2017,Tuvalu
+2017,West Bank and Gaza
+2017,Yemen
+2017,Zimbabwe
+2016,Afghanistan
+2016,Burundi
+2016,Bosnia and Herzegovina
+2016,Central African Republic
+2016,Chad
+2016,Comoros
+2016,Democratic Republic of Congo
+2016,Côte d'Ivoire
+2016,Eritrea
+2016,Gambia
+2016,Guinea-Bissau
+2016,Haiti
+2016,Iraq
+2016,Kiribati
+2016,Kosovo
+2016,Lebanon
+2016,Liberia
+2016,Libya
+2016,Madagascar
+2016,Mali
+2016,Marshall Islands
+2016,Micronesia
+2016,Myanmar
+2016,Sierra Leone
+2016,Solomon Islands
+2016,Somalia
+2016,South Sudan
+2016,Sudan
+2016,Syrian Arab Republic
+2016,Timor-Leste
+2016,Togo
+2016,Tuvalu
+2016,West Bank and Gaza
+2016,Yemen
+2016,Zimbabwe
+2015,Afghanistan
+2015,Bosnia and Herzegovina
+2015,Burundi
+2015,Central African Republic
+2015,Chad
+2015,Comoros
+2015,Democratic Republic of Congo
+2015,Côte d'Ivoire
+2015,Eritrea
+2015,Guinea-Bissau
+2015,Haiti
+2015,Iraq
+2015,Kiribati
+2015,Kosovo
+2015,Liberia
+2015,Libya
+2015,Madagascar
+2015,Mali
+2015,Marshall Islands
+2015,Micronesia
+2015,Myanmar
+2015,Sierra Leone
+2015,Solomon Islands
+2015,Somalia
+2015,South Sudan
+2015,Sudan
+2015,Syrian Arab Republic
+2015,Timor-Leste
+2015,Togo
+2015,Tuvalu
+2015,West Bank and Gaza
+2015,Yemen
+2015,Zimbabwe
+2014,Afghanistan
+2014,Bosnia and Herzegovina
+2014,Burundi
+2014,Central African Republic
+2014,Chad
+2014,Comoros
+2014,Democratic Republic of Congo
+2014,Republic of Congo
+2014,Côte d'Ivoire
+2014,Eritrea
+2014,Guinea-Bissau
+2014,Haiti
+2014,Iraq
+2014,Kiribati
+2014,Kosovo
+2014,Liberia
+2014,Libya
+2014,Madagascar
+2014,Malawi
+2014,Mali
+2014,Marshall Islands
+2014,Micronesia
+2014,Myanmar
+2014,Nepal
+2014,Sierra Leone
+2014,Solomon Islands
+2014,Somalia
+2014,South Sudan
+2014,Sudan
+2014,Syrian Arab Republic
+2014,Timor-Leste
+2014,Togo
+2014,Tuvalu
+2014,West Bank and Gaza
+2014,Yemen
+2014,Zimbabwe
+2013,Afghanistan
+2013,Angola
+2013,Bosnia and Herzegovina
+2013,Burundi
+2013,Central African Republic
+2013,Chad
+2013,Comoros
+2013,Democratic Republic of Congo
+2013,Republic of Congo
+2013,Côte d'Ivoire
+2013,Eritrea
+2013,Guinea
+2013,Guinea-Bissau
+2013,Haiti
+2013,Iraq
+2013,Kiribati
+2013,Kosovo
+2013,Liberia
+2013,Libya
+2013,Marshall Islands
+2013,Micronesia
+2013,Myanmar
+2013,Nepal
+2013,Sierra Leone
+2013,Solomon Islands
+2013,Somalia
+2013,South Sudan
+2013,Sudan
+2013,Syrian Arab Republic
+2013,Timor-Leste
+2013,Togo
+2013,Tuvalu
+2013,West Bank and Gaza
+2013,Yemen
+2013,Zimbabwe
+2012,Afghanistan
+2012,Angola
+2012,Bosnia and Herzegovina
+2012,Burundi
+2012,Central African Republic
+2012,Chad
+2012,Comoros
+2012,Democratic Republic of Congo
+2012,Republic of Congo
+2012,Côte d'Ivoire
+2012,Eritrea
+2012,Georgia
+2012,Guinea
+2012,Guinea-Bissau
+2012,Haiti
+2012,Iraq
+2012,Kiribati
+2012,Kosovo
+2012,Liberia
+2012,Marshall Islands
+2012,Micronesia
+2012,Myanmar
+2012,Nepal
+2012,Sierra Leone
+2012,Solomon Islands
+2012,Somalia
+2012,Sudan
+2012,Timor-Leste
+2012,Togo
+2012,West Bank and Gaza
+2012,Western Sahara
+2012,Yemen
+2012,Zimbabwe
+2011,Afghanistan
+2011,Angola
+2011,Bosnia and Herzegovina
+2011,Burundi
+2011,Central African Republic
+2011,Chad
+2011,Comoros
+2011,Democratic Republic of Congo
+2011,Republic of Congo
+2011,Côte d'Ivoire
+2011,Eritrea
+2011,Georgia
+2011,Guinea
+2011,Guinea-Bissau
+2011,Haiti
+2011,Iraq
+2011,Kiribati
+2011,Kosovo
+2011,Liberia
+2011,Myanmar
+2011,Nepal
+2011,São Tomé and Príncipe
+2011,Sierra Leone
+2011,Solomon Islands
+2011,Somalia
+2011,Sudan
+2011,Tajikistan
+2011,Timor-Leste
+2011,Togo
+2011,West Bank and Gaza
+2011,Western Sahara
+2011,Yemen
+2011,Zimbabwe
+2010,Afghanistan
+2010,Angola
+2010,Bosnia and Herzegovina
+2010,Burundi
+2010,Cameroon
+2010,Central African Republic
+2010,Chad
+2010,Comoros
+2010,Democratic Republic of Congo
+2010,Republic of Congo
+2010,Côte d'Ivoire
+2010,Djibouti
+2010,Eritrea
+2010,Gambia
+2010,Georgia
+2010,Guinea
+2010,Guinea-Bissau
+2010,Haiti
+2010,Kiribati
+2010,Kosovo
+2010,Liberia
+2010,Myanmar
+2010,Nepal
+2010,Papua New Guinea
+2010,São Tomé and Príncipe
+2010,Sierra Leone
+2010,Solomon Islands
+2010,Somalia
+2010,Sudan
+2010,Tajikistan
+2010,Timor-Leste
+2010,Togo
+2010,Tonga
+2010,West Bank and Gaza
+2010,Western Sahara
+2010,Yemen
+2010,Zimbabwe
+2009,Afghanistan
+2009,Angola
+2009,Burundi
+2009,Cambodia
+2009,Cameroon
+2009,Central African Republic
+2009,Chad
+2009,Comoros
+2009,Democratic Republic of Congo
+2009,Republic of Congo
+2009,Côte d'Ivoire
+2009,Djibouti
+2009,Eritrea
+2009,Gambia
+2009,Guinea
+2009,Guinea-Bissau
+2009,Haiti
+2009,Kiribati
+2009,Kosovo
+2009,Laos
+2009,Liberia
+2009,Myanmar
+2009,São Tomé and Príncipe
+2009,Sierra Leone
+2009,Solomon Islands
+2009,Somalia
+2009,Sudan
+2009,Tajikistan
+2009,Timor-Leste
+2009,Togo
+2009,Tonga
+2009,Uzbekistan
+2009,West Bank and Gaza
+2009,Yemen
+2009,Zimbabwe
+2008,Afghanistan
+2008,Angola
+2008,Burundi
+2008,Cambodia
+2008,Central African Republic
+2008,Chad
+2008,Comoros
+2008,Democratic Republic of Congo
+2008,Republic of Congo
+2008,Côte d'Ivoire
+2008,Djibouti
+2008,Eritrea
+2008,Gambia
+2008,Guinea
+2008,Guinea-Bissau
+2008,Haiti
+2008,Kiribati
+2008,Kosovo
+2008,Laos
+2008,Liberia
+2008,Myanmar
+2008,Papua New Guinea
+2008,São Tomé and Príncipe
+2008,Sierra Leone
+2008,Solomon Islands
+2008,Somalia
+2008,Sudan
+2008,Timor-Leste
+2008,Togo
+2008,Tonga
+2008,Uzbekistan
+2008,Vanuatu
+2008,West Bank and Gaza
+2008,Zimbabwe
+2007,Afghanistan
+2007,Angola
+2007,Burundi
+2007,Cambodia
+2007,Central African Republic
+2007,Chad
+2007,Comoros
+2007,Democratic Republic of Congo
+2007,Republic of Congo
+2007,Côte d'Ivoire
+2007,Djibouti
+2007,Eritrea
+2007,Gambia
+2007,Guinea
+2007,Guinea-Bissau
+2007,Haiti
+2007,Kosovo
+2007,Laos
+2007,Liberia
+2007,Mauritania
+2007,Myanmar
+2007,Nigeria
+2007,Papua New Guinea
+2007,São Tomé and Príncipe
+2007,Sierra Leone
+2007,Solomon Islands
+2007,Somalia
+2007,Sudan
+2007,Timor-Leste
+2007,Togo
+2007,Tonga
+2007,Uzbekistan
+2007,Vanuatu
+2007,West Bank and Gaza
+2007,Zimbabwe
+2006,Afghanistan
+2006,Angola
+2006,Burundi
+2006,Cambodia
+2006,Central African Republic
+2006,Chad
+2006,Comoros
+2006,Democratic Republic of Congo
+2006,Republic of Congo
+2006,Côte d'Ivoire
+2006,Djibouti
+2006,Eritrea
+2006,Gambia
+2006,Guinea
+2006,Guinea-Bissau
+2006,Haiti
+2006,Kosovo
+2006,Laos
+2006,Liberia
+2006,Myanmar
+2006,Nigeria
+2006,Papua New Guinea
+2006,São Tomé and Príncipe
+2006,Sierra Leone
+2006,Solomon Islands
+2006,Somalia
+2006,Sudan
+2006,Tajikistan
+2006,Timor-Leste
+2006,Togo
+2006,Tonga
+2006,Uzbekistan
+2006,Vanuatu
+2006,West Bank and Gaza
+2006,Zimbabwe

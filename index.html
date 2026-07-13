@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exploring the Drivers of Longevity</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+  <!-- ===== GUIDED TOUR OVERLAY ===== -->
+  <div id="tour-overlay" style="display:none;" role="dialog" aria-modal="true" aria-labelledby="tour-title">
+    <div id="tour-backdrop" onclick="endTour()"></div>
+
+    <div id="tour-box">
+      <div id="tour-header">
+        <span id="tour-chapter">Introduction</span>
+        <button id="tour-close-btn" onclick="endTour()" aria-label="Close tour">✕</button>
+      </div>
+
+      <h3 id="tour-title">Welcome</h3>
+      <p id="tour-text">Loading…</p>
+      <div id="tour-insight"></div>
+      <div id="tour-dots"></div>
+
+      <div id="tour-controls">
+        <div id="tour-nav-row">
+          <span id="tour-step-count">1 / 8</span>
+          <button id="tour-prev" disabled>← Back</button>
+          <button id="tour-next">Next →</button>
+        </div>
+        <button id="tour-skip">Explore on my own</button>
+      </div>
+    </div>
+  </div>
+
+  <button id="restart-tour" title="Restart the guided data story">Data Story</button>
+
+  <!-- HERO -->
+  <div id="hero">
+    <h1>Exploring the <span>Drivers of Longevity</span><br>Through World Bank Development Indicators</h1>
+    <p>How do GDP, healthcare spending, and conflict shape life expectancy across the world? Explore <span
+        id="hero-year-count">—</span> years of data (<span id="hero-year-range">—</span>) from 200+ countries.</p>
+  </div>
+
+  <!-- YEAR SLIDER -->
+  <div id="slider-container">
+    <label>Year</label>
+    <span id="year-slider-min-label" style="font-size:0.78rem;color:var(--text-muted)">—</span>
+    <input type="range" id="year-slider" min="0" max="1" value="0" step="1" disabled
+      aria-label="Year">
+    <span id="year-slider-max-label" style="font-size:0.78rem;color:var(--text-muted)">—</span>
+    <div id="year-display">2015</div>
+    <button id="play-btn">▶ Play</button>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div id="main">
+
+    <!-- STATS SECTION -->
+    <div id="stats-section" class="card">
+      <div id="selected-label"><strong>Global Overview</strong> (<span id="selected-year-label">2015</span>)</div>
+      <div id="stat-cards">
+        <div class="stat-card">
+          <div class="stat-value" id="stat-gdp">N/A</div>
+          <div class="stat-label">Avg GDP per Capita</div>
+          <div class="stat-delta" id="delta-gdp"></div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="stat-health">N/A</div>
+          <div class="stat-label">Avg Health Exp (%GDP)</div>
+          <div class="stat-delta" id="delta-health"></div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="stat-life">N/A</div>
+          <div class="stat-label">Avg Life Expectancy</div>
+          <div class="stat-delta" id="delta-life"></div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="stat-count">N/A</div>
+          <div class="stat-label">Countries in Selection</div>
+          <div class="stat-delta" id="delta-count" style="color:var(--text-muted)"></div>
+        </div>
+      </div>
+      <div class="chart-description">
+        <strong>Figure 6.</strong> The statistics panel summarises the current selection, reporting GDP per capita, healthcare expenditure, and life expectancy along with year-on-year changes. It provides a quick snapshot of trends and relative performance.
+      </div>
+    </div>
+
+    <!-- TOP ROW: Map + Bubble -->
+    <div id="top-row">
+
+      <!-- MAP -->
+      <div class="card">
+        <div class="card-title">Choropleth — Life Expectancy at Birth <span
+            style="color:var(--text-muted);text-transform:none;font-size:0.75rem;letter-spacing:0">(click to select
+            countries)</span></div>
+        <svg id="map-svg"></svg>
+        <div style="display:flex;gap:8px;align-items:center;margin-top:8px;margin-bottom:14px;flex-wrap:wrap;">
+          <span style="font-size:0.72rem;color:var(--text-muted)">Life Expectancy:</span>
+          <svg id="map-legend-svg" width="180" height="16"></svg>
+          <span style="font-size:0.72rem;color:var(--text-muted)">Low → High</span>
+          <button id="clear-selection"
+            style="margin-left:auto;background:transparent;border:1px solid var(--border);color:var(--text-muted);border-radius:4px;padding:3px 10px;font-size:0.72rem;cursor:pointer;">Clear
+            Selection</button>
+        </div>
+        <div class="chart-description">
+          <strong>Figure 1.</strong> The choropleth map encodes life expectancy by country, with a continuous red-to-green scale indicating lower to higher values. Selecting a country links it across all coordinated views for temporal and multivariate comparison.
+        </div>
+      </div>
+
+      <!-- BUBBLE CHART -->
+      <div class="card">
+        <div class="card-title">Economic Relationships &amp; Life Expectancy</div>
+        <div class="chart-controls">
+          <div class="ctrl-group">
+            <label>X Axis:</label>
+            <select class="ctrl-select" id="x-select">
+              <option value="gdp_per_capita_usd">GDP per Capita</option>
+              <option value="perc_health_expenditure_of_gdp">Health Expenditure (%GDP)</option>
+            </select>
+          </div>
+          <div class="ctrl-group">
+            <label>Color:</label>
+            <select class="ctrl-select" id="color-select">
+              <option value="is_conflict">Conflict Status</option>
+              <option value="region">Region</option>
+            </select>
+          </div>
+          <div class="ctrl-group">
+            <label>Size:</label>
+            <select class="ctrl-select" id="size-select">
+              <option value="income_group">Income Group</option>
+              <option value="perc_health_expenditure_of_gdp">Health Expenditure</option>
+            </select>
+          </div>
+
+          <div class="ctrl-group checkbox-group">
+            <label style="display:flex;align-items:center;gap:6px;cursor:pointer;">
+              <input type="checkbox" id="toggle-trails" checked>
+              Show movement trails
+            </label>
+            <!-- INFO ICON -->
+            <span class="info-icon">
+              i
+              <span class="info-tooltip">
+                Movement trails show how a selected country evolves over time in the chart.
+                <br><br>
+                Each line traces the country's path across years, showing how its GDP (or health spending)
+                and life expectancy change together.
+                <br><br>
+                This helps you see long-term progress, stagnation, or decline.
+              </span>
+            </span>
+          </div>
+        </div>
+        <svg id="bubble-svg"></svg>
+        <div id="bubble-legend" class="legend"></div>
+        <div class="chart-description">
+          <strong>Figure 2.</strong> The bubble chart plots GDP per capita (log-scaled) against life expectancy, revealing a strong but diminishing relationship.
+        </div>
+      </div>
+    </div>
+
+    <!-- PARALLEL COORDINATES ROW -->
+    <div id="middle-row">
+      <div class="card">
+        <div class="card-title">
+          Multi-Factor Analysis — What Drives Life Expectancy?
+          <span style="color:var(--text-muted);text-transform:none;font-size:0.75rem;letter-spacing:0">
+            (brush axes to filter, click lines to select)
+          </span>
+        </div>
+
+        <div style="font-size:0.78rem;color:var(--text-muted);margin-bottom:8px">
+          Each line represents a country. Compare how GDP, healthcare investment, and life expectancy interact across nations.
+        </div>
+
+        <svg id="parallel-svg"></svg>
+        <div id="parallel-description" class="chart-description">
+          <strong>Figure 3.</strong> Each line represents a country across multiple indicators. 
+          Trace a line to understand how economic strength, healthcare investment, 
+          and life expectancy interact. Use brushing to filter ranges and uncover patterns.
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM ROW: Boxplot + Line -->
+    <div id="bottom-row">
+
+      <!-- BOX PLOT -->
+      <div class="card">
+        <div class="card-title">Life Expectancy Distribution — Conflict vs Stable</div>
+        <svg id="boxplot-svg"></svg>
+        <div class="legend" id="box-legend">
+          <div class="legend-item">
+            <div class="legend-dot" style="background:var(--conflict)"></div>Conflict-affected
+          </div>
+          <div class="legend-item">
+            <div class="legend-dot" style="background:var(--stable)"></div>Stable
+          </div>
+        </div>
+        <div class="chart-description">
+          <strong>Figure 4.</strong> This box plot compares life expectancy distributions between conflict-affected and stable countries. The median gap often exceeds 10 years, highlighting how conflict disrupts healthcare systems, infrastructure, and long-term population health.
+        </div>
+      </div>
+
+      <!-- LINE CHART -->
+      <div class="card">
+        <div class="card-title">Life Expectancy Trends — Selected Countries</div>
+        <div style="font-size:0.78rem;color:var(--text-muted);margin-bottom:8px">Select countries on the map to compare
+          trends. Showing all regions by default.</div>
+        <svg id="linechart-svg"></svg>
+        <div class="legend" id="line-legend"></div>
+        <div class="chart-description">
+          <strong>Figure 5.</strong> The line chart shows temporal trends in life expectancy. By default it displays regional averages; selecting countries reveals individual trajectories. This allows comparison of long-term growth, decline, and recovery patterns.
+        </div>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- RANKING TABLE -->
+    <div class="card" id="ranking-section">
+      <div class="card-title">Regional Ranking — Life Expectancy</div>
+      <div class="rank-controls">
+        <label class="ctrl-group" style="font-size:0.78rem;color:var(--text-muted)">Group by:</label>
+        <select class="ctrl-select" id="rank-group-select">
+          <option value="region">Region</option>
+          <option value="income_group">Income Group</option>
+        </select>
+      </div>
+      <table id="ranking-table">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Country</th>
+            <th>Health Exp (%GDP)</th>
+            <th>Life Expectancy</th>
+            <th>GDP per Capita</th>
+            <th>Group</th>
+          </tr>
+        </thead>
+        <tbody id="ranking-tbody"></tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <!-- TOOLTIP -->
+  <div id="tooltip"></div>
+
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
